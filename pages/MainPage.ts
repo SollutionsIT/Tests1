@@ -12,7 +12,7 @@ export class MainPage extends BasePage {
     // Инициализируем локаторы. 
     // Замени эти селекторы на реальные, когда накликаешь их через панель Playwright!
     this.mainHeader = page.locator('h1');
-    this.loginButton = page.getByRole('button', { name: 'Войти' }); 
+    this.loginButton = page.getByRole('button', { name: 'Sign in' });
   }
 
   // Метод: открыть именно главную страницу (URL подтянется из конфига)

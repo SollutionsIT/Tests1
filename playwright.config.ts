@@ -48,10 +48,19 @@ export default defineConfig({
 
   // Настройка браузеров, в которых будем гонять тесты
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+  {
+    name: 'setup',
+    testMatch: 'tests/setup/auth.setup.ts', // Точный путь к нашему файлу
+  },
+  {
+    name: 'chromium',
+    use: {
+      ...devices['Desktop Chrome'],
+      storageState: '.auth/user.json', // Путь к сохраненному состоянию
     },
+    dependencies: ['setup'],
+  },
+],
     // Пока закомментируем Firefox и Safari для ускорения разработки. 
     // Раскомментируешь позже, когда тесты будут стабильны.
     /*
@@ -64,5 +73,5 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
     */
-  ],
+ 
 });

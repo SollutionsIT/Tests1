@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "cookie_consent",
+      "value": "all",
+      "domain": "test.fylpi.at",
+      "path": "/",
+      "expires": 1804542785,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bearerToken",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoic29sbHV0aW9ucy5wbEBnbWFpbC5jb20iLCJzdWIiOiI4YmVmOTA2YS03YjU5LTQwNTgtYTUzNC05ODU2ZTY4YzEyYzcifSwiaWF0IjoxNzczMDA2Nzg3LCJleHAiOjE3NzMwOTMxODd9.hOuiwp6eyitp7Ug5fH9TtrLmvx_hVyMOK8XRLJGblK8",
+      "domain": "test.fylpi.at",
+      "path": "/",
+      "expires": 1773093187,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://test.fylpi.at",
+      "localStorage": [
+        {
+          "name": "lng",
+          "value": "de"
+        }
+      ]
+    }
+  ]
+}
